@@ -2,50 +2,56 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5ncQjAOTnra":
+      case "6YIduYqmRJ5":
         Script1();
         break;
-      case "5igcDfp6uzD":
+      case "6AY2w4enk0W":
         Script2();
         break;
-      case "5Vj3fJZvA6D":
+      case "6Ut9tSL7YDc":
         Script3();
         break;
-      case "5rnXzdSHscp":
+      case "60TZTMN9iDo":
         Script4();
         break;
-      case "5ifwRiSauZQ":
+      case "6c9BbIy8dHI":
         Script5();
         break;
-      case "5elgTONlP4M":
+      case "6WCY1OUVg6X":
         Script6();
         break;
-      case "6F47jY71Fan":
+      case "5xiLbnbiUTX":
         Script7();
         break;
-      case "5wMD265X7HX":
+      case "6fil6Cu3eD0":
         Script8();
         break;
-      case "6B1pQT34JO6":
+      case "6S6KQMpAS2g":
         Script9();
         break;
-      case "5mNQDzV0aAf":
+      case "5jKnvjeoi2n":
         Script10();
         break;
-      case "5dyVede1S5B":
+      case "5dSdAfNTY3E":
         Script11();
         break;
-      case "6fNhl9XOERo":
+      case "6FCGKvUOI5p":
         Script12();
         break;
-      case "6COBbKgUljw":
+      case "6lcRuUBn4is":
         Script13();
         break;
-      case "5weh8foPNSw":
+      case "6pzubfRrdch":
         Script14();
         break;
-      case "5YTZkIxkz4o":
+      case "6F5t8xLmZhE":
         Script15();
+        break;
+      case "6dztsjHSNWw":
+        Script16();
+        break;
+      case "68fe09U9Nrq":
+        Script17();
         break;
   }
 }
@@ -79,29 +85,17 @@ function Script3()
 
 function Script4()
 {
-  if (!window.bgMusic) {
-    window.bgMusic = new Audio("story_content/lagu1.mp3");
-    window.bgMusic.loop = true;
+  if (window.bgMusic && !window.bgMusic.paused) {
+    window.bgMusic.pause(); // hanya pause, tidak reset
 }
-window.bgMusic.play();
-
 }
 
 function Script5()
 {
-  if (window.bgMusic && !window.bgMusic.paused) {
-    window.bgMusic.pause(); // hanya pause, tidak reset
-}
+  navigator.app.exitApp();
 }
 
 function Script6()
-{
-  if (window.bgMusic && !window.bgMusic.paused) {
-    window.bgMusic.pause(); // hanya pause, tidak reset
-}
-}
-
-function Script7()
 {
   if (!window.bgMusic) {
     window.bgMusic = new Audio("story_content/lagu1.mp3");
@@ -109,6 +103,13 @@ function Script7()
 }
 window.bgMusic.play();
 
+}
+
+function Script7()
+{
+  if (window.bgMusic && !window.bgMusic.paused) {
+    window.bgMusic.pause(); // hanya pause, tidak reset
+}
 }
 
 function Script8()
@@ -120,19 +121,19 @@ function Script8()
 
 function Script9()
 {
-  if (window.bgMusic && !window.bgMusic.paused) {
-    window.bgMusic.pause(); // hanya pause, tidak reset
-}
-}
-
-function Script10()
-{
   if (!window.bgMusic) {
     window.bgMusic = new Audio("story_content/lagu1.mp3");
     window.bgMusic.loop = true;
 }
 window.bgMusic.play();
 
+}
+
+function Script10()
+{
+  if (window.bgMusic && !window.bgMusic.paused) {
+    window.bgMusic.pause(); // hanya pause, tidak reset
+}
 }
 
 function Script11()
@@ -144,19 +145,19 @@ function Script11()
 
 function Script12()
 {
-  if (window.bgMusic && !window.bgMusic.paused) {
-    window.bgMusic.pause(); // hanya pause, tidak reset
-}
-}
-
-function Script13()
-{
   if (!window.bgMusic) {
     window.bgMusic = new Audio("story_content/lagu1.mp3");
     window.bgMusic.loop = true;
 }
 window.bgMusic.play();
 
+}
+
+function Script13()
+{
+  if (window.bgMusic && !window.bgMusic.paused) {
+    window.bgMusic.pause(); // hanya pause, tidak reset
+}
 }
 
 function Script14()
@@ -167,6 +168,23 @@ function Script14()
 }
 
 function Script15()
+{
+  if (!window.bgMusic) {
+    window.bgMusic = new Audio("story_content/lagu1.mp3");
+    window.bgMusic.loop = true;
+}
+window.bgMusic.play();
+
+}
+
+function Script16()
+{
+  if (window.bgMusic && !window.bgMusic.paused) {
+    window.bgMusic.pause(); // hanya pause, tidak reset
+}
+}
+
+function Script17()
 {
   if (window.bgMusic && !window.bgMusic.paused) {
     window.bgMusic.pause(); // hanya pause, tidak reset
